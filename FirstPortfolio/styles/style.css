@@ -1,0 +1,153 @@
+:root {
+    --main-cplor: #EF6431;
+    --strong-color: white;
+    --dark-color: #A6401B;
+    --light-clor: #FFA483;
+}
+
+body {
+    background-color: var(--main-cplor);
+    color: var(--dark-color);
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 2em;
+    font-style: normal;
+}
+
+strong {
+    color: var(--strong-color);
+    font-weight: normal;
+}
+
+.static {
+    position: fixed;
+    padding-left: 5vw;
+
+    & menu {
+        display: flex;
+        gap: 10px;
+    
+        & section {
+            background-color: var(--light-clor);
+            border-radius: 50px;
+            align-items: center;
+            font: bold;
+            display: grid;
+            padding: .5em;
+    
+            & > * {
+                &:hover {
+                    color: var(--strong-color);
+                }
+            }
+        }
+    }
+    
+    & header {
+     
+        & h1, h3 {
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+
+        & .line {
+            background-color: var(--strong-color);
+            height: 1px;
+            width: 250px;
+        }
+    }
+    
+    & main {
+        & .phrase {
+            font-size: 1.5em;
+        
+            &.one {
+                color: var(--light-clor);
+                padding-top: 20px;
+            }
+        }
+
+    }
+    
+    & footer {
+        gap: 10px;
+    
+        & section {
+            background-color: var(--light-clor);
+            border-radius: 50px;
+            align-items: center;
+            font: bold;
+            display: flex;
+            padding: .5em;
+            justify-content: space-evenly;
+    
+            & a {
+                color: var(--dark-color);
+            }
+    
+            & > * {
+                &:hover {
+                    color: var(--strong-color);
+                }
+            }
+        }
+    }
+}
+
+.dinamic {
+   float: right;
+   padding-right: 5vw;
+
+   & h3 {
+    position: fixed;
+    top: 50vh;
+    z-index: -1;
+    font: 3em;
+    color: var(--strong-color);
+    padding-left: 5vw;
+    font-size: 3em;
+   }
+
+   & aside {
+    display: grid;
+    gap: 1em;
+    overflow: scroll;
+    
+    & img {
+        height: 20em;
+        width: 20em;
+        border-radius: 24px;
+        object-fit: cover;
+    }
+    }
+}
+
+
+.press-key {
+    color: var(--strong-color)
+}
+
+.key {
+    font-weight: normal;
+    width: 400px;
+    color: var(--strong-color);
+    display: grid;
+    grid-template-columns: repeat(3, 4em);
+    grid-template-rows: 4em;
+    gap: 1em 6em;
+}
+
+.keys {
+    font-size: 3em;
+    padding: .175em;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: var(--dark-color);
+    text-align: center;
+    align-items: center;
+    box-shadow: 
+    -4px 2px 1px 3px var(--dark-color),
+    -5px 3px 1px 4px var(--strong-color);
+}
+

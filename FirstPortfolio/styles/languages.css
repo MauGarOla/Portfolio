@@ -1,0 +1,29 @@
+.es {
+    visibility: collapse;
+}
+
+.en {
+    visibility: visible;
+}
+
+.de {
+    visibility: collapse;
+}
+
+
+.languages {
+    display: grid;
+    width: 350px;
+    grid-template-columns: 20px 1fr 1fr 1fr;
+    gap: 1em;
+    font: bold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    color: var(--strong-color)
+}
+
